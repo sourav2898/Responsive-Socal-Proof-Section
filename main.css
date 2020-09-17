@@ -15,7 +15,7 @@ body{
 }
 
 .container{
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -51,7 +51,7 @@ body{
 
 .top .top-right{
     width: 50%;
-    margin: 100px 50px 0;
+    margin-top: 100px;
 }
 
 .top-right .rating-section{
@@ -83,7 +83,93 @@ body{
     margin-left: 45px;
 }
 
+.bottom {
+    background-image: url(images/bg-pattern-bottom-desktop.svg);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
 
+.bottom .card-1, .card-2, .card-3{
+    width: 350px;
+    background-color: var(--Very-Dark-Magenta);
+    padding: 10px;
+    border-radius: 10px;
+    word-break: keep-all;
+    color: var(--White);
+}
+
+.bottom .card-1 .head,.card-2 .head,.card-3 .head{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.bottom .card-1 .head .name,.card-2 .head .name,.card-3 .head .name{
+    padding-left: 25px;
+}
+
+.bottom .card-1 .descriptio,.card-2 .descriptio,.card-3 .descriptio{
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.card-1 .head img, .card-2 .head img,.card-3 .head img{
+    border-radius: 50%;
+    width: 50px;
+}
+
+.bottom .card-2{
+    margin-top: 15px;
+}
+
+.bottom .card-3{
+    margin-top: 25px;
+}
+
+
+@media screen and (max-width: 600px){
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .contianer{
+        width:100%;
+    }
+    
+    .container .top{
+        flex-wrap: wrap;
+    }
+    
+    .top-right .rating-section{
+        display: block;
+    }
+    
+    .top-right .rating-section rate{
+        position: absolute;
+        align-items: center;
+    }
+    
+    .top .top-left{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .top .top-right{
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+    
+    .top .top-right .rate-1, .rate-2, .rate-3{
+        width:100%;
+        margin:0;
+    }
+}
 
 
 
